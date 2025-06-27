@@ -1,21 +1,384 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-
-  <title> </title>
-  <meta name="description" content="AwesomeGeek's Github Pages">
-  <meta name="author" content="AwesomegGeek">
-
-  <!-- link rel="stylesheet" href="css/styles.css?v=1.0" -->
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naing Tun Win - Senior Software Engineer</title>
+  <meta name="description" content="Software Engineer Portfolio - Full Stack Developer">
+  <meta name="author" content="AwesomeGeek">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 </head>
 
-<body>
-  Welcome
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-xl font-bold text-gray-900">AwesomeGeek</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors">About</a>
+          <a href="#skills" class="text-gray-600 hover:text-gray-900 transition-colors">Skills</a>
+          <a href="#projects" class="text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
+          <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+        </div>
+        <button class="md:hidden text-gray-600 hover:text-gray-900" id="mobile-menu-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="md:hidden fixed top-16 inset-x-0 bg-white shadow-lg z-40 hidden" id="mobile-menu">
+    <div class="px-4 py-4 space-y-4">
+      <a href="#about" class="block text-gray-600 hover:text-gray-900">About</a>
+      <a href="#skills" class="block text-gray-600 hover:text-gray-900">Skills</a>
+      <a href="#projects" class="block text-gray-600 hover:text-gray-900">Projects</a>
+      <a href="#contact" class="block text-gray-600 hover:text-gray-900">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <div
+          class="w-32 h-32 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mx-auto mb-8 flex items-center justify-center">
+          <span class="text-white text-4xl font-bold">AG</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          Hi, I'm <span class="text-blue-600">Naing Tun Win</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          A passionate software engineer crafting digital experiences with modern technologies
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#projects" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+            View My Work
+          </a>
+          <a href="#contact"
+            class="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Hi, I'm a passionate software engineer who loves to code, hack hardware, and build cool things—from split
+          keyboards to custom PCs. I'm also a big fan of open-world games and flight simulators. When I'm not immersed
+          in tech or gaming, I'm a proud dad of three amazing kids.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Problem Solver</h3>
+          <p class="text-gray-600">Breaking down complex challenges into elegant solutions</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Fast Learner</h3>
+          <p class="text-gray-600">Always adapting to new technologies and best practices</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Team Player</h3>
+          <p class="text-gray-600">Collaborating effectively to deliver exceptional results</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Skills & Technologies</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Technologies I work with to bring ideas to life
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="logos:python" style="color: #3776ab;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">Python</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="logos:rust" style="color: #000000;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">Rust</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="logos:typescript-icon" style="color: #3178c6;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">TypeScript</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="logos:postgresql" style="color: #336791;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">PostgreSQL</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="logos:tailwindcss-icon" style="color: #06b6d4;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">Tailwind</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="logos:docker-icon" style="color: #2496ed;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">Docker</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="mdi:cogs" style="color: #6366f1;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">DevOps</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="logos:azure-icon" style="color: #0078d4;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">Azure DevOps</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="logos:aws" style="color: #ff9900;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">AWS</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="logos:django-icon" style="color: #092e20;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">Django</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="logos:fastapi-icon" style="color: #009688;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">FastAPI</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="simple-icons:rocket" style="color: #d33847;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">Rocket</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="simple-icons:tokio" style="color: #000000;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">Tokio</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="simple-icons:dioxus" style="color: #228be6;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">Dioxus</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2 flex justify-center">
+            <iconify-icon icon="logos:tauri" style="color: #ffc131;"></iconify-icon>
+          </div>
+          <span class="text-sm font-medium">Tauri</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Some of my works</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Some of the projects I've worked on recently
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Quran APP in Myanmar Language</h3>
+            <p class="text-gray-600 mb-4">
+                A Myanmar-language Quran app offering three distinct translations for a deeper reading experience, complete with word-by-word translation and audio recitation.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Typescript</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Nuxt</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Tailwind</span>
+            </div>
+            <div class="flex space-x-4">
+              <a href="https://quran.mmsy.info/" class="text-blue-600 hover:text-blue-800 font-medium">PWA</a>
+              <a href="#" class="text-gray-600 hover:text-gray-800 font-medium">Playstore</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="h-48 bg-gradient-to-br from-green-400 to-green-600"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Upcoming Quran App Update</h3>
+            <p class="text-gray-600 mb-4">
+              Demo of upcoming features for the Quran app, including a new UI and enhanced functionality.
+              (Note: This is a demo and not the final version.)
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Rust</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">WASM</span>
+              <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Tailwind</span>
+            </div>
+            <div class="flex space-x-4">
+              <a href="./quran/" class="text-blue-600 hover:text-blue-800 font-medium">Live Demo</a>
+              <a target="_blank" href="https://github.com/awesomegeek/awesomegeek.github.io" class="text-gray-600 hover:text-gray-800 font-medium">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">AI Chat Bot</h3>
+            <p class="text-gray-600 mb-4">An intelligent chatbot powered by machine learning algorithms</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Python</span>
+              <span class="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">FastAPI</span>
+              <span class="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">TensorFlow</span>
+            </div>
+            <div class="flex space-x-4">
+              <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Live Demo</a>
+              <a href="#" class="text-gray-600 hover:text-gray-800 font-medium">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Work Together</h2>
+        <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+          Have a project in mind? I'd love to hear about it and discuss how we can bring your ideas to life.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <div class="max-w-md">
+          <h3 class="text-2xl font-semibold mb-6 text-center">Get In Touch</h3>
+          <div class="space-y-4">
+            <!-- <div class="flex items-center">
+              <svg class="w-6 h-6 text-blue-400 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                </path>
+              </svg>
+              <span>hello@awesomegeek.dev</span>
+            </div> -->
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-blue-400 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+              </svg>
+              <span>github.com/awesomegeek</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-blue-400 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0H8">
+                </path>
+              </svg>
+              <span>
+                <a href="https://www.linkedin.com/in/naing-tun-win-46648812/" target="_blank" rel="noopener noreferrer">
+                  LinkedIn 
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p>&copy; 2025 AwesomeGeek. Built with ❤️ and Tailwind CSS & Copilot.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+        // Close mobile menu if open
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Add scroll effect to navigation
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 100) {
+        nav.classList.add('bg-white/95', 'backdrop-blur-sm');
+      } else {
+        nav.classList.remove('bg-white/95', 'backdrop-blur-sm');
+      }
+    });
+  </script>
 </body>
+
 </html>
